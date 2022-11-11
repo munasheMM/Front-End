@@ -32,6 +32,10 @@ a {
     transition: opacity 300ms ease;
 }
 
+i:hover {
+  opacity: 0.7;
+}
+
 .link__hover-effect:after {
   content: "";
   position: absolute;
@@ -110,6 +114,7 @@ nav {
   margin: 0 12px;
   color: #242424;
   font-weight: 700;
+  transition: all 300ms ease;
 }
 
 .nav__link--anchor--primary {
@@ -117,7 +122,7 @@ nav {
   padding: 8px 20px;
   border-radius: 50px;
   color: white;
-  transition: all 300ms ease;
+
 }
 
 .nav__link--anchor--primary:hover {
@@ -142,7 +147,6 @@ nav {
 }
 
 .about-me__info {
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -152,9 +156,10 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 600px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
+  animation: fade-up 650ms , 400ms backwards;
 }
 
 .about-me__picture--mask {
@@ -164,6 +169,19 @@ nav {
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
   margin-bottom: 28px;
+  animation: animate-profile-picture 800ms , 200s backwards;
+}
+
+@keyframes animate-profile-picture {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .about-me__picture {
@@ -175,24 +193,33 @@ nav {
 }
 
 .about-me__info-title {
-  width: 100%;
   margin-bottom: 16px;
-  display: flex;
 }
 
 .about-me__info-para {
-  width: 100%;
   font-size: 20px;
   margin-bottom: 28px;
-  display: flex;
 }
 
 .about-me__link {
-  width: 100%;
   font-size: 20px;
   color: #242424;
   padding: 0 16px;
-  
+}
+
+.about-me__links {
+  animation: fade-up 650ms , 200ms backwards;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .about-me__img--container {
@@ -203,6 +230,33 @@ nav {
 
 .about-me__img {
   width: 100%;
+  animation: fade-in 1200ms 800ms backwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.wave {
+  display: inline-block;
+  animation: animate-wave 500ms infinite ease-in-out;
+}
+
+@keyframes animate-wave {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
 /* TECH - STACK SECTION */
