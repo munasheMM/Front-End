@@ -42,13 +42,8 @@ i:hover {
   height: 3px;
   width: 0%;
   bottom: -3px;
-  right: 0;
-  transition: all 300ms ease;
-}
-
-.link__hover-effect:hover:after {
-  width: 100%;
   left: 0;
+  transition: all 300ms ease;
 }
 
 .link__hover-effect--white:after {
@@ -56,6 +51,11 @@ i:hover {
 }
 .link__hover-effect--black:after {
   background-color: #000
+}
+
+.link__hover-effect:hover:after {
+  width: 100%;
+  right: 0;
 }
 
 li {
