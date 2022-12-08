@@ -1,58 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treact Test Doc</title>
     <link rel="stylesheet" href="./styles.css" />
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
-</head>
-
-<body>
+  </head>
+  <body>
     <section id="landing">
-        <header>
-            <nav>
-                <div class="nav__container row">
-                    <a href="#" class="word__logo logo"><img class="logo" src="https://treact.owaiskhan.me/static/media/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="logo">Treact</a>
-                    <div>
-                        <ul class="nav__links">
-                            <li><a href="#" class="nav__link">About</a></li>
-                            <li><a href="#" class="nav__link">Blog</a></li>
-                            <li><a href="#" class="nav__link">Pricing</a></li>
-                            <li><a href="#" class="nav__link">Contact Us</a></li>
-                            <li><a href="#" class="nav__link">Login</a></li>
-                            <li><a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <div class="info__col row">
-            <div class="info__col1--words">
-                <h1>Beautiful React Templates for you</h1>
-                <p class="info__col--para">
-                    Our templates are easy to setup, understand and customize. 
-                    Fully modular components with a variety of pages and components
-                </p>
-            </div>
-            <div>
-                <input class="info__col--input" type="text" placeholder="Your E-mail Address">
-                <button class="info__col--input">Get Started</button>
-            </div>
-            <div>
-                <img class="info__col2--pic" src="https://treact.owaiskhan.me/static/media/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg">
-            </div>
+      <nav>
+        <div class="nav__container">
+          <a class="nav__container--logo">
+            <img
+              class=""
+              src="https://treact.owaiskhan.me/static/media/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+              alt="logo"
+            />Treact</a
+          >
+          <ul class="nav__links">
+            <li><a href="#" class="nav__link">About</a></li>
+            <li><a href="#" class="nav__link">Blog</a></li>
+            <li><a href="#" class="nav__link">Pricing</a></li>
+            <li><a href="#" class="nav__link">Contact Us</a></li>
+            <li><a href="#" class="nav__link">Login</a></li>
+            <li>
+              <a href="#" class="nav__link nav__link--primary">Sign Up</a>
+            </li>
+          </ul>
         </div>
+      </nav>
+
+      <div class="row TwoColumnWithInput__container">
+        <div class="TwoColumnWithInput__TwoColumn">
+          <div class="TwoColumnWithInput__LeftColumn">
+            <h1 class="TwoColumnWithInput__Heading">
+              Beautiful React Templates for you.
+            </h1>
+            <p class="TwoColumnWithInput__Para">
+              Our templates are easy to setup, understand and customize. Fully
+              modular components with a variety of pages and components.
+            </p>
+            <div class="TwoColumnWithInput__Actions">
+              <input type="text" placeholder="Your E-mail Address" />
+              <button>Get Started</button>
+            </div>
+            <div class="TwoColumnWithInput__CustomersLogos">
+              <p>Our TRUSTED Customers</p>
+              <img
+                src="https://treact.owaiskhan.me/static/media/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+                alt="Our Customers"
+              />
+            </div>
+          </div>
+          <div class="TwoColumnWithInput__RightColumn">
+            <img
+              src="https://treact.owaiskhan.me/static/media/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+              alt="Design Illustration"
+              class="TwoColumnWithInput__StyledImg"
+            />
+          </div>
+        </div>
+      </div>
     </section>
-    
 
-
+    <section id="features">
+      <div class="container">
+        <div class="row">
+          <h2 class="section__title">FEATURES</h2>
+          <h1 class="section__title--Big">We have Amazing Service</h1>
+          <p class="section__title--para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            iste totam culpa iusto ducimus id sed a aliquam repudiandae
+            consectetur tenetur dolores harum ipsum saepe nobis delectus unde,
+            eaque sit!
+          </p>
+        </div>
+        <div class="ThreeColWithSideImage__Card">
+          <span class="imageContainer"
+            ><img
+              src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+              alt="" /></span
+          ><span class="textContainer"
+            ><span class="title">Secure</span>
+            <p class="description">
+              We strictly only deal with vendors that provide top notch
+              security.
+            </p></span
+          >
+        </div>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>
-
