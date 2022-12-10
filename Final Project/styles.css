@@ -192,11 +192,18 @@ FEATURES
 
 */
 
-.container {
+#features {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features__container {
     padding: 80px 0;
     flex-direction: row;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     padding-top: 96px;
     padding-bottom: 96px;
 }
@@ -204,13 +211,79 @@ FEATURES
 .section__title{
     display: flex;
     justify-content: center;
+    font-weight: 700;
 }
 .section__title--Big{
     display: flex;
     justify-content: center;
+    text-align: center;
+    line-height: 72px;
+    font-weight: 900;
+    font-size: 48px;
 }
 .section__title--para {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    margin-top: 16px;
+    margin-block-start: 16px;
+    width: 100%;
+    text-size-adjust: 100%;
+}
+
+.spacer {
+    display: block;
+    width: 1000px;
+    margin-top: 40px;
+    line-height: 24px;
+}
+
+.ThreeColWithSideImage__Col{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ThreeColWithSideImage__Card {
+    align-items: flex-start;
+    color: #243E63;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: calc(100%/3);
+    line-height: 24px;
+    text-align: left;
+}
+
+.imageContainer {
+    color: black;
+    flex-shrink: 0;
+    border-radius: 9999px;
+    border-width: 1px;
+    border: 2 2 2 2;
+    padding: 20 20 20 20;
+    text-align: center;
+    line-height: 24px;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+
+Quality Work 
+
+*/
+
+#Quality__work {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.TwoColWithButton__Container{
+    
 }
