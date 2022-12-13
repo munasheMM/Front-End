@@ -404,29 +404,40 @@ Quality Work
 
 .TwoColWithSteps__ImageColumn {
     position: relative;
-    display: flex;
+    display: block;
     flex-shrink: 0;
     line-height: 24px;
+    max-width: none;
     width: 50%; 
     justify-content: center;
 }
 
 .TwoColWithSteps___StyledImage {
-    display: flex;
-    height: 350px;
-    border-width: 1px;
-    border-color: rgb(226, 18, 18);
+    display: block;
+    height: 295px;
     line-height: 24px;
     max-width: 100%;
+    border-color: rgb(36, 62, 99);
 }
 
 .TwoColWithButton__RightCol {
     display: flex;
     width: 50%;
-    align-items: center;
     flex-direction: column;
-    padding-top: 32px;
+    line-height: 24px;
+    margin-left: 64px;
+    max-width: none;
+    order: 9999;
+    text-size-adjust: 100%;
+    width: 453px;
+}
+
+.TwoColWithSteps__RightCol--content {
+    display: block;
+    line-height: 24px;
     padding-bottom: 32px;
+    padding-top: 32px;
+    text-align: left;
 }
 
 .TwoColWithSteps__TextColumn--subtitle {
@@ -444,6 +455,7 @@ Quality Work
     display: block;
     font-size: 48px;
     font-weight: 900;
+    letter-spacing: 1.2px;
     line-height: 60px;
     margin-block-start: 16px;
     margin-top: 16px;
@@ -451,26 +463,63 @@ Quality Work
     text-size-adjust: 100%;
 }
 
-.TwoColWithSteps__Step{
+
+.TwoColWithSteps__Steplist{
     display: flex;
+    line-height: 24px;
+    list-style-type: none;
+    margin-block-start: 48px;
+    margin-top: 48px;
+    text-align: left;
+    text-size-adjust: 100%;
 }
 
-.TwoColWithSteps__Container{
+.TwoColWithSteps__list {
+    align-items: flex-start;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    line-height: 24px;
+    list-style-type: none;
+    margin-top: 32px;
+    text-align: left;
 }
-.TwoColWithSteps__textContainer{
-    display: flex;
-    flex-direction: column;
-}
+
 
 .TwoColWithSteps__textContainer--titleNum {
+    color: rgb(203, 213, 224);
     display: block;
     font-size: 36px;
     font-weight: 600;
     line-height: 36px;
+    list-style-type: none;
+    text-align: left;
+    width: 41px;
 }
 
-.TwoColWithSteps__textContainer--title
+.TwoColWithSteps__textContainer {
+    display: block;
+    line-height: 24px;
+    list-style-type: none;
+    margin-left: 24px;
+    text-align: left;
+}
 
-.TwoColWithSteps__textContainer--description
+.TwoColWithSteps__textContainer--title {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    list-style: none;
+    text-align: left;
+    width: 320px;
+}
+
+.TwoColWithSteps__textContainer--description {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-block-start: 12px;
+    margin-top: 12px;
+    max-width: 320px;
+    text-align: left;
+}
