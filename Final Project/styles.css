@@ -554,3 +554,39 @@ Pricing
     margin-top: 40px;
     width: 1043px;
 }
+
+.pricing--subtitle {
+    color: rgb(100, 21, 255);
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-block-end: 16px;
+    margin-bottom: 16px;
+}
+
+.pricing--title {
+    display: block;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    line-height: 72px;
+    text-align: center;
+    width: 1034px;
+}
+
+.pricing--para {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29.25px;
+    margin-block-start: 16px;
+    margin-top: 16px;
+    max-width: 576px;
+    text-align: center;
+    width: 576px;
+}
+
+.pricing__Container--plans {
+    
+}
