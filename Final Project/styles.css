@@ -588,5 +588,165 @@ Pricing
 }
 
 .pricing__Container--plans {
-    
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 24px;
+    position: relative;
+}
+
+.pricing__Plans--box1 {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0);
+    color: rgb(26, 32, 44);
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+    margin-right: 32px;
+    margin-top: 64px;
+    max-width: 384px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
+    position: relative;
+    text-align: center;
+    width: 322px;
+}
+
+.pricing__Plans--box1__planHighlight {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: rgb(26, 32, 44);
+    display: block;
+    height: 8px;
+    line-height: 24px;
+    position: absolute;
+    text-align: center;
+}
+
+.pricing__Plans--box1__planHeader {
+    color: rgb(26, 32, 44);
+    display: flex;
+    flex-direction: column;
+    line-height: 26px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.name {
+    color: rgb(26, 32, 44);
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32.5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.price {
+    color: rgb(26, 32, 44);
+    display: block;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 78px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    text-align: center;
+}
+
+.duration {
+    color: rgb(160,174,192);
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.pricing__Plans--box1__planFeatures {
+    border-bottom-width: 2px;
+    border-top-width: 2px;
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+    margin-left: -32px;
+    margin-right: -32px;
+    text-align: center;
+}
+
+.mainFeature {
+    color: rgb(26, 32, 44);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.feature {
+    color: rgb(113,128,150);
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pricing__Plans--box1__planButtonCon {
+    display: block;
+    line-height: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+}
+
+.pricing__Plans--box1__planButton {
+    align-items: flex-start;
+    appearance: button;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(115deg, rgb(56,178,172) 0%, rgb(129,230,217)100%);
+    border-bottom-color: rgb(226,232,240);
+    border-left-color: rgb(226,232,240);
+    border-top-color: rgb(226,232,240);
+    border-right-color: rgb(226,232,240);
+    color: rgb(247,250,252);
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    line-height: 21px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    text-align: center;
+    width: 288px;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.pricing__Plans--box2 {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0);
+    color: rgb(26, 32, 44);
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+    margin-right: 32px;
+    margin-top: 64px;
+    max-width: 384px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
+    position: relative;
+    text-align: center;
+    width: 322px;
 }
