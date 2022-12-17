@@ -35,3 +35,51 @@
     //console.log(fahrenheit);  //Code is correct//
 
 // Equality example //
+    //let bool = "1" == 1
+    //let bool2 = "1" === 1
+
+    //console.log(bool, bool2)
+
+
+
+// Conditianals example //
+
+//Example 1: //
+    //let subscribed = false
+    //let loggedIn = true
+
+    //if (subscribed === true) {
+        //console.log("show the video")
+    //}
+    //else if (loggedIn === true) {
+        //console.log("Tell the user to upgrade their subscription")
+    //}
+    //else {
+        //console.log("tell user to log into account")
+    //}
+
+// Example 2: //
+
+    //let cash = 100
+    //let price = 200
+    //let difference = cash - price 
+
+    //if (cash > price ) {
+    //    console.log(`you paid extra - here's ${difference} dollars your change`)
+    //}
+    //else if (cash === price) {
+    //    console.log("you paid the exact amount, have a nice day!")
+    //}
+    //else {
+    //    console.log(`not enough money - you still owe ${difference * -1} dollars`)
+    //}
+
+// Example 3: //
+
+    let cash = 50
+    let price = 40
+    let isStoreOpen = true
+
+    if (cash >= price) {
+        console.log("we have enough cash to buy the products")
+    }
