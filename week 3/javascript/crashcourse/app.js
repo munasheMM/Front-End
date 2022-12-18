@@ -76,10 +76,61 @@
 
 // Example 3: //
 
-    let cash = 50
-    let price = 40
-    let isStoreOpen = true
+    //let cash = 50
+    //let price = 40
+    //let isStoreOpen = false
 
-    if (cash >= price) {
-        console.log("we have enough cash to buy the products")
+    //if (cash >= price || !isStoreOpen) {
+      //  console.log("print the receipt")
+    //}
+
+// Ternary Operators //
+   
+//example 1: //
+    //let hot = false
+    //hot ? console.log("weather is hot outside") : console.log("weather is cold")
+
+//example 2: //
+    //let subscribed = true
+    //let loggedIn = true
+
+    //let str = subscribed && loggedIn ? 'show the video' : 'hide the video'
+    //console.log(str)
+
+//example 3: //
+    //let cash = 50
+    //let price = 40
+    //let isStoreOpen = true
+
+    //let str = cash >= price && isStoreOpen ? 'give receipt' : 'do not give receipt'
+    //console.log(str)   
+
+// Loops //
+
+//example 1: with while loop //
+    //let count = 1
+   
+    //while (count <= 100) {
+        //console.log(count)
+        //count = count + 1
+    //}
+
+//example 2: with for loop //
+    //for (let i = 0; i < 3; i++) {
+      //  console.log(i + 1);
+    //}
+
+/** Write a for-loop that loops through 1 to 20
+ * If the number is divisble by 3, print "Frontend"
+ * if the number is divisble by 5, print "Simplifted"
+ * If the number is divisble by 3 and 5 print "Frontend Simplifted"
+ * if the number is not divisble by either 3 or 5, print the number */
+
+for (let i = 1; i <= 20; ++i) {
+    if (i % 3 === 0) {
+        console.log(`${i} -> frontend`)
     }
+    if (i % 5 === 0) {
+        console.log(`${i} -> Simplifted`)
+    }
+}
