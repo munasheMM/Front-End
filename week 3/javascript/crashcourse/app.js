@@ -120,17 +120,53 @@
       //  console.log(i + 1);
     //}
 
-/** Write a for-loop that loops through 1 to 20
+/** Example 3:
+ * Write a for-loop that loops through 1 to 2
  * If the number is divisble by 3, print "Frontend"
  * if the number is divisble by 5, print "Simplifted"
  * If the number is divisble by 3 and 5 print "Frontend Simplifted"
  * if the number is not divisble by either 3 or 5, print the number */
 
-for (let i = 1; i <= 20; ++i) {
-    if (i % 3 === 0) {
+/**
+ * for (let i = 1; i <= 20; ++i) {
+    if (i % 3 === 0 && i % 5 ===0) {
+        console.log(`${i} -> Frontend Simplifted`)
+    }
+    else if (i % 3 === 0) {
         console.log(`${i} -> frontend`)
     }
-    if (i % 5 === 0) {
+    else if (i % 5 === 0) {
         console.log(`${i} -> Simplifted`)
     }
+    else {
+        console.log(`${i} -> ${i}`)
+    }
 }
+ */
+
+/**Example 4:
+ * Print out every character from the string:
+ * "Frontend Simplifited"
+*/
+//const str = "Frontend Simplified"
+
+//to loop over everithing in the string is to loop over until "i" is less than the string//
+//for (let i = 0; i < str.length; ++i) {
+    //console.log(str[i])
+//}
+
+
+
+// Functions //
+
+//Example 1:  Function Def//
+//function welcomePersonToFES(name) {
+      //  console.log(`Welcome to FES, ${name}`)
+    //}
+// call the function 
+    //welcomePersonToFES('munahse');
+    //welcomePersonToFES('munahse2');
+    //welcomePersonToFES('munahse3');
+
+//Example 2: //
+
