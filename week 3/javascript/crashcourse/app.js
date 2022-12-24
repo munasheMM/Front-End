@@ -169,4 +169,146 @@
     //welcomePersonToFES('munahse3');
 
 //Example 2: //
+   // function sumOfTwoNumbers(num1, num2) {
+     //  return num1 + num2
+    //}
 
+    //console.log(sumOfTwoNumbers(10, 10));
+
+/** Example 3
+ * Create a function that converts a Celsius to Fahrenheit
+ * 
+ * Celsius to Fahrenheit formula:
+ *   F = C x 1.8 + 32
+ * 
+ * example:
+ * convertCelsiusToFahrenheit(0) ->
+ *  Solution 1:
+ *  function convertCelsiusToFahrenheit(celsius) {
+        return fahrenheit = celsius * 1.8 + 32
+    }
+
+    console.log(convertCelsiusToFahrenheit(16))
+ Solution 2:
+    const convertCelsiusToFahrenheit(celsius) => {
+        return celsius * 1.8 + 32
+    }
+
+    console.log(convertCelsiusToFahrenheit(0))
+ */
+
+
+
+// Arrays //
+//example 1: //
+
+    //let arr = [20, 30, 40, 50, 100]
+
+    //first element of array
+    //console.log(arr[0])
+    //last element of array
+    //console.log(arr[arr.length - 1])
+
+//example 2; //
+ //let arr = [20, 30, 40, 50, 100]
+
+ //adding an element to end of array 
+    //arr.push(200)
+
+
+ //console.log(arr)
+
+//example 3(long version): //
+//let arr = [20, 30, 40, 50, 100]
+
+//let newArr = arr.filter((element) => {
+  //  console.log(element)
+    //if (element < 50) {
+      //  return true;
+    //}
+//})
+//console.log(newArr)
+
+//Short version:
+   // let newArr = arr.filter(element => element < 50 )
+  
+  //  console.log(newArr)
+
+/**
+ * example 4:
+ * Filter out all the 'FAIL' elements in an array
+ * 
+ * -examples=
+ * ['A+', 'A', 'FAIL'] => ['A+', 'A']
+ * ['FAIL', 'FAIL', 'B'] => ['B']
+ * ['FAIL'] => []
+ */
+
+
+//    let grades = ['A+', 'A', 'FAIL']
+
+//long way =
+//    let goodGrades = grades.filter((element) => {
+//        console.log(element)
+//        if (element !== 'FAIL') {
+//            return true;
+//        }
+//    })
+
+//short way =
+    //let goodGrades = grades.filter(element => element !== 'FAIL')
+
+//  console.log(goodGrades)
+
+/**
+ * example 5:
+ * Filter out all the 'FAIL' elements in an array
+ * without using the Array.filter method
+ * 
+ */
+ 
+//    let grades = ['A+', 'A', 'FAIL']
+
+// Create a new empty array called 'goodGrades'
+// add the current element onto 'goodGrades' only if
+// the current element is not equal to 'FAIl
+//    let goodGrades = []
+
+//  for (let i = 0; i < grades.length; ++i) {
+//    if (grades[i] !== 'FAIL') {
+//        goodGrades.push(grades[i]);
+//    }
+//}
+//  console.log(goodGrades);
+
+//example 6:
+//  let arr = [1, 4, 9, 16]
+
+//  let newArray = arr.map(element => 'dog')
+
+//  console.log(newArray)
+
+//example 7:
+/**
+ * Turn each element in an array of dollars into cents
+ * 
+ * -examples=
+ * [1, 5, 10, 3] => [100, 500, 1000, 300]
+ */
+
+//    let dollars = [1, 5, 10, 3];
+
+//long way: //
+//    let cents = dollars.map(element => {
+//        return element * 100
+//    })
+
+//short way:
+//    let cents = dollars.map(element => element * 100)
+//    console.log(cents)
+
+//example 8:
+/**
+ * Turn each element in an array of dollars into cents
+ * without using the map method 
+ * 
