@@ -340,5 +340,55 @@
 
 //console.log(user.username);
 
-//example 2: //
+//example 2: when object is in an array //
 
+//let users = [
+  //  {
+    //username: 'Munashe',
+    //email: 'munahse@email.com',
+//}, 
+//{
+  //  username: 'Munashe2',
+    //email: 'munahse2@email.com',
+//}
+//];
+
+//console.log(users[0].username);
+
+//example 3 login function:
+
+let users = [
+    {
+        username: 'Munashe',
+        email: 'munashe@email.com',
+        password: 'test123',
+    }, 
+    {
+        username: 'Munashe2',
+        email: 'munahse2@email.com',
+        password: '123test',
+    },
+    {
+        username: 'jow',
+        email: 'jow@email.com',
+        password: '123jow',
+    },
+];
+
+function login(email, password) {
+    for (let i = 0; i < users.length; ++i) {
+        if (users[i].email === email) {
+          console.log(users[i]);
+          if (users[i].password === password) {
+            console.log('log the user in - the details are correct')
+          }
+          else {
+            console.log('password is incorrect - try again')
+          }
+          return;
+        }
+    }
+    console.log('could not find an email that matches')
+}
+
+login('munashe@email.com', 'test123');
