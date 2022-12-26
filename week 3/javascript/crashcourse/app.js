@@ -312,3 +312,33 @@
  * Turn each element in an array of dollars into cents
  * without using the map method 
  * 
+ */
+    //let dollars = [1, 5, 10, 3];
+// create new cents array
+    //let cents = [];
+// loop over every element in dollars 
+    //for (let i = 0; i < dollars.length; ++i) {
+      //  cents.push(dollars[i] * 100); 
+        //multiply the element by 100
+        // add ths element onto cents array
+    //}
+
+// console log cents
+    //console.log(cents);
+
+
+
+
+    /// Objects ///
+
+//example 1: //
+
+//let user = {
+  //  username: 'Munashe',
+    //email: 'munahse@email.com'
+//}
+
+//console.log(user.username);
+
+//example 2: //
+
