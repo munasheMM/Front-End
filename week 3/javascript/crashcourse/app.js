@@ -357,7 +357,8 @@
 
 //example 3 login function:
 
-let users = [
+/**
+ * let users = [
     {
         username: 'Munashe',
         email: 'munashe@email.com',
@@ -392,3 +393,89 @@ function login(email, password) {
 }
 
 login('munashe@email.com', 'test123');
+ */
+
+/**
+ * Example 4
+ * create a register function that accepts:
+ * - username
+ * - email
+ * - password
+ * - subscriptionStatus
+ * - discordId
+ * - lessonsCompleted
+ * 
+ * Inside your register function:
+ * 1. create a user object
+ * 2. push this user object onto the 'users array
+ * 
+ * let users = [
+    {
+        username: 'Munashe',
+        email: 'munashe@email.com',
+        password: 'test123',
+    }, 
+    {
+        username: 'Munashe2',
+        email: 'munahse2@email.com',
+        password: '123test',
+    },
+    {
+        username: 'jow',
+        email: 'jow@email.com',
+        password: '123jow',
+    },
+];
+
+function login(email, password) {
+    for (let i = 0; i < users.length; ++i) {
+        if (users[i].email === email) {
+          console.log(users[i]);
+          if (users[i].password === password) {
+            console.log('log the user in - the details are correct')
+          }
+          else {
+            console.log('password is incorrect - try again')
+          }
+          return;
+        }
+    }
+    console.log('could not find an email that matches')
+}
+
+login('munashe@email.com', 'test123');
+
+function register(user) {
+    users.push(user);
+}
+
+    register( {
+        username: "test",
+        email: "testemail@email.com",
+        password: "test123",
+        subscriptionStatus: "VIP",
+        discordId: "test#0001",
+        lessonsCompleted: [0, 1]
+    });
+
+    console.log(users);
+ * 
+ */
+
+// DOM //
+
+// first way of accessing an element //
+//console.log(document.querySelector('#title'));
+// Use # for ID, use '.' for a class
+
+// second way of accessing an element(if you have an ID)
+//console.log(document.getElementById('title'))
+
+//example 3: to change the html element //
+//console.log(document.querySelector('#title').innerHTML = 'Frontend')
+//example 4: to change the html element with what you have already
+//console.log(document.querySelector('#title').innerHTML += 'Frontend')
+
+// example 5: change CSS //
+//document.querySelector('#title').style.color = 'red'
+//document.querySelector('#title').style.fontSize = '48px'
