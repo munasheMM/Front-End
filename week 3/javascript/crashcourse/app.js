@@ -465,17 +465,30 @@ function register(user) {
 // DOM //
 
 // first way of accessing an element //
-//console.log(document.querySelector('#title'));
+    //console.log(document.querySelector('#title'));
 // Use # for ID, use '.' for a class
 
 // second way of accessing an element(if you have an ID)
-//console.log(document.getElementById('title'))
+    //console.log(document.getElementById('title'))
 
 //example 3: to change the html element //
-//console.log(document.querySelector('#title').innerHTML = 'Frontend')
+    //console.log(document.querySelector('#title').innerHTML = 'Frontend')
 //example 4: to change the html element with what you have already
-//console.log(document.querySelector('#title').innerHTML += 'Frontend')
+    //console.log(document.querySelector('#title').innerHTML += 'Frontend')
 
 // example 5: change CSS //
-//document.querySelector('#title').style.color = 'red'
-//document.querySelector('#title').style.fontSize = '48px'
+    //document.querySelector('#title').style.color = 'red'
+    //document.querySelector('#title').style.fontSize = '48px'
+
+//example 6: click listenr//
+    //function changeTitletoRed() {
+    //  document.querySelector('#title').style.color = 'red'
+        //console.log('Clicked');
+    //}
+
+//example 7: theme changer 
+
+    function toggleDarkMode() {
+      document.querySelector('body').classList.toggle("dark-theme")
+        console.log('Clicked');
+    }
