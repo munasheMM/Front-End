@@ -128,12 +128,50 @@ console.log(isOdd(15));
 
 //Q12: If a number is even, return 1 otherwise return -1
 //Create a function that takes a number argument and returns 1 if the number is even. if the number is odd return -1
-function booleanInteger(num1) {
-    if (num1 % 2 !== 0)  {
-        return -1
+/**
+ * method 1:
+ * function booleanInteger(num1) {
+    if (num1 % 2 === 0)  {
+        return 1;
     }
-    else return 1
+    return -1;
     
 }
 
 console.log(booleanInteger(4));
+
+method 2:
+function booleanInteger(num1) {
+    return num1 % 2 === 0 ? 1 : -1; (ternary operator)
+}
+
+console.log(booleanInteger(4));
+ */
+
+// Q13: Check if a user is logged in AND subscribed
+// Create a function that takes in two strings. if the first string is equal to 
+//'LOGGED_IN' AND the second string is equal to 'SUBSCRIBED return true,
+// otherwise return false.
+/**
+ * function isLoggedInAndSubscribed(LOGGED_IN, SUBSCRIBED) {
+    return (LOGGED_IN === 'LOGGED_IN') && (SUBSCRIBED === 'SUBSCRIBED')
+      
+}
+
+console.log(isLoggedInAndSubscribed('LOGGED_IN', 'SUBSCRIBED'))
+ * 
+ */
+
+
+// Q14: Check if a user is logged in AND subscribed
+// Create a function that takes in two strings. if the first string is equal to 
+//'LOGGED_IN' OR the second string is equal to 'SUBSCRIBED return true,
+// otherwise return false.
+/**
+ * function isLoggedInAndSubscribed(LOGGED_IN, SUBSCRIBED) {
+    return (LOGGED_IN === 'LOGGED_IN') || (SUBSCRIBED === 'SUBSCRIBED')
+      
+}
+
+console.log(isLoggedInAndSubscribed('LOGGED_out', 'UNSUBSCRIBED'))
+ */
