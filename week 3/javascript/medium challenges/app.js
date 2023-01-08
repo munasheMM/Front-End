@@ -69,9 +69,18 @@ console.log(arrlength([1,2,3]));
  // Q6: Calculate the time
  // Given a number in seconds, returns this number in mm:ss format.
 
- function calcTime() {
+ function calcTime(seconds) {
+    let timerMinutes = Math.floor(seconds / 60);
+    let timerSeconds = seconds % 60;
 
+    if (timerMinutes.toString().length === 1) {
+        timerMinutes = '0' + timerMinutes
+    }
+
+    return timerMinutes + ':' + timerSeconds;
  }
 
- console.log(calcTime(66))
+ console.log(calcTime(60));
+
+ //Q7
  
