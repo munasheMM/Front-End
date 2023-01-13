@@ -68,8 +68,8 @@ console.log(arrlength([1,2,3]));
 
  // Q6: Calculate the time
  // Given a number in seconds, returns this number in mm:ss format.
-
- function calcTime(seconds) {
+/**
+ * function calcTime(seconds) {
     let timerMinutes = Math.floor(seconds / 60);
     let timerSeconds = seconds % 60;
 
@@ -80,7 +80,81 @@ console.log(arrlength([1,2,3]));
     return timerMinutes + ':' + timerSeconds;
  }
 
- console.log(calcTime(60));
+ console.log(calcTime(90));
 
- //Q7
+ * 
+ */
+ 
+ //Q7: Find the largest number
+ // Given an array of numbers, 
+ //return the largest number of that array
+/**
+ * function getMax(arr) {
+   let max = arr[0]
+   for (let i = 0; i < arr.length; ++i) {
+      if (arr[i] > max) {
+         max = arr[i];
+      }
+   }
+   return max
+ }
+ 
+ console.log(getMax([5,100,0]))
+ * 
+
+ */
+ 
+ //Q8: Reverse a string
+ // Given a string, retunr the reversed string
+//method 1: Incrementing for loop
+/**
+ * function reverseString(str) {
+   let stringReverse = '';
+   for (let i = 0; i < str.length; ++i) {
+      stringReverse = str[i] + stringReverse;
+   }
+   return stringReverse;
+}
+
+console.log(reverseString('abc'));
+ * 
+ */
+
+//method 2: decrementing for loop
+/**
+ * function reverseString(str) {
+   let stringReverse = '';
+   for (let i = str.length - 1; i >= 0; --i) {
+      stringReverse = stringReverse + str[i]
+   }
+   return stringReverse;
+}
+
+console.log(reverseString('abc'));
+
+ */
+
+//method 3: array reverse property
+/**
+ * function reverseString(str) {
+   return str.split('').reverse().join('');
+}
+
+console.log(reverseString('abc'))
+//to convert a string to an array use an empty split
+ * 
+ */
+
+//method 4:
+/**
+ *  function reverseString(str) {
+   var newString = ''
+   for (let i = str.length - 1; i >= 0; i--) {
+      newString += str[i]
+   }
+   return newString
+ }
+
+ console.log(reverseString('ABC'))
+ */
  
