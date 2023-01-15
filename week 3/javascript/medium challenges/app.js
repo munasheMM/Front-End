@@ -158,3 +158,69 @@ console.log(reverseString('abc'))
  console.log(reverseString('ABC'))
  */
  
+ //Q9: Turn every element in an array into 0
+ // Given an array of elements, 
+ // return the same length array filled with 0's
+
+ //method 1: For loop
+ /**
+  * function convertToZero(arr) {
+   let  convert  = [];
+
+   for (let i = 0; i < arr.length; ++i) {
+      convert[i] = '0';
+      }
+      return convert
+   }
+   
+ console.log(convertToZero([5,100,0])) 
+  *  
+  */
+
+ //method 2: Array fill
+ /**
+  * function convertToZero(arr) {
+   return new Array(arr.length).fill(0);
+ }
+
+ console.log(convertToZero([5,100,0]))
+  *  
+  */
+ 
+ //method 3: array map
+ /**
+  *  function convertToZero(arr) {
+   return arr.map(elem => 0);
+ }
+
+ console.log(convertToZero([5,100,0]))
+  */
+
+ //Q10: Filter out all the apples 
+ //Given an array of fruits, 
+ //if it is an apple remove it from the array
+
+//method 1: for loop
+/**
+ * function removeApples(arr) {
+   let newlist = []
+
+   for (let i = 0; i < arr.length; ++i) {
+      if (arr[i] !== 'Apple') {
+         newlist.push(arr[i]);
+      }
+   }
+   return newlist
+}
+console.log(removeApples(['banana','Apple','orange']))
+ */
+
+
+//method 2: array filter 
+/**
+ *function removeApples(arr) {
+   return arr.filter(element => element !== 'Apple')
+}
+
+console.log(removeApples(['banana','Apple','orange'])) 
+ */
