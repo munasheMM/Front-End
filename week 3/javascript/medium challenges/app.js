@@ -224,3 +224,31 @@ console.log(removeApples(['banana','Apple','orange']))
 
 console.log(removeApples(['banana','Apple','orange'])) 
  */
+
+//Q11: Filter out all the falsy values
+//Given an array of values, filter out the falsy values,
+//and only return the truthy values.
+//method 1:
+/**
+ * function filterOutFalsy(arr) {
+   return arr.filter(elem => !!elem == true)
+
+}
+console.log(filterOutFalsy(["",[],'banana','Apple','orange']))
+ * 
+ */
+
+//Q12: Truthy to true, Falsy to false
+//Given an array of truthy and falsy values,
+//return the same array of elements into its 
+//boolean value.
+
+/**
+ *  function convertToBoolean(arr) {
+   return arr.map(elem => !!elem)
+}
+
+console.log(convertToBoolean([500,0,'Pig','',[]]))
+ */
+
+
